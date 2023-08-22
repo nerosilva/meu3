@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <script>
+            function exibirMensagem() {
+                const nome = document.getElementById("nome").value;
+                const mensagem = `Bem-vindo(a), ${nome}`;
+                const mensagem2 = "Bem-vindo" +nome
+                document.getElementById("MensagemBoasVidas").textContent = mensagem;
+                document.getElementById("mensagemBoasVidas2").textContent = mensagem2;    
+
+            }   
+            
+        </script>
+
+
+</head>
+<body>
+    
+
+    <label for="nome">digite seu nome</label>
+    <input type="text" id="nome" oninput="exibirMensagem()">
+    <p id="MensagemBoasVidas"></p>
+    <p id="mensagemBoasVidas2"></p>
+
+
+</body>
+</html>
